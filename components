@@ -1,9 +1,12 @@
 import React from 'react';
 
-export function Button({ onClick, children, disabled }) {
+export function Textarea({ placeholder, value, onChange }) {
   return (
-    <button onClick={onClick} disabled={disabled} className="button">
-      {children}
-    </button>
+    <textarea
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+      className="textarea"
+    />
   );
 }

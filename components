@@ -1,0 +1,9 @@
+import React from 'react';
+
+export function Button({ onClick, children, disabled }) {
+  return (
+    <button onClick={onClick} disabled={disabled} className="button">
+      {children}
+    </button>
+  );
+}
